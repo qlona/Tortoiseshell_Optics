@@ -1,0 +1,240 @@
+html{
+	font-size: 18px;
+	line-height: 1.4;
+}
+body{
+	font-family: "Helvetica", sans-serif;
+	font-size:1rem;
+}
+.container{
+	margin: 0 auto;
+	width: 960px;
+}
+header{
+	height: 30rem;
+	background-image: url(../img/glasses-bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.menu-bar{
+	display: flex;
+	align-items: center;
+	background-color: cadetblue;
+	padding: 1rem 0;
+	position: relative;
+	top:1rem;
+}
+.logo img{
+	height: 1.5rem;
+	padding-right: 1rem;
+	padding-left: 2rem;
+}
+.logo{
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+	color: white;
+}
+.menu .mobile{
+	display: none;
+}
+.menu a{
+	color: white;
+	text-decoration: none;
+}
+.menu li{
+	display: inline-block;
+	padding-right: 2rem; 
+}
+.banner-text{
+	width: 45%;
+	position: relative;
+	top: 10rem;
+	left: 43%;
+	padding: 1.5rem 5rem;
+	background-color: white;
+}
+.banner-text h1{
+	font-weight: bold;
+	font-size: 2rem;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.products{
+	display: flex;
+	justify-content: center;
+	margin: 3rem 0;
+}
+.product{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	width: 5rem;
+	padding: 0 3rem;
+	height: 8rem;
+}
+.image img{
+	width: 5rem;
+	margin-bottom: 1rem;
+}
+.img-1 img{
+	width: 3.5rem;
+}
+.product p{
+	text-align: center;
+	line-height: 1.2;
+}
+.main-info{
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 5rem;
+}
+.info{
+	width: 35%;
+	padding-right: 7%;
+}
+.info p{
+	font-size: 0.9rem;
+	line-height: 1.2;
+}
+.info .blue-bg{
+	padding: 0.5rem 1.25rem;
+	width: 10rem;
+	background-color: cadetblue;
+	margin-bottom: 1rem;
+	font-weight: bold;
+	font-size: 1rem;
+	color: white;
+}
+
+footer .logo{
+	color: black;
+	
+}
+footer{
+	background-color: azure;
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1024px){
+	header{
+		height: 22rem;
+	}
+	.container{
+		width: 100%;
+	}
+	.banner-text{
+		width: 30%;
+		top: 5rem;
+		left: 52%;
+		padding: 1.75rem 3.5rem;
+	}
+	.banner-text h1{
+		font-size: 1.33rem;
+	}
+	.main-info{
+		margin: 0 3.5rem 4rem 3.5rem;
+	}
+	.menu-bar{
+		top:0rem;
+	}
+	.main-info{
+		justify-content: space-between;
+	}
+}
+
+
+@media only screen and (max-width: 640px){
+	.container{
+		width: 100%;
+		margin: 0 auto;
+	}
+	header{
+		height: 17rem;
+		background-position: 20%;
+	}
+	.logo span{
+		display: none;
+	}
+
+
+	.menu-bar{
+		justify-content: space-between;
+		padding: 0.75rem 0;
+		top:0;
+	}
+
+	.logo img{
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+	.logo{
+		display: flex;
+		align-items: center;
+
+	}
+	.menu .desktop{
+		display: none;
+	}
+	.menu .mobile{
+		display: inline-block;
+	}
+	.menu li{
+		display: inline-block;
+		padding-right: 1rem; 
+	}
+
+	.banner-text{
+		width: 100%;
+		top: 9rem;
+		left: 0%;
+		padding: 1rem 0;
+	}
+	.banner-text h1{
+		font-size: 1rem;
+		text-align: center;
+	}
+
+	.products{
+		width: 15rem;
+		margin: 3rem auto;
+		flex-wrap: wrap;
+	}
+	.product p{
+		font-size: 0.77rem;
+		line-height: 1.2;
+	}
+
+	.main-info{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0;
+	}
+	.info{
+		width: 100%;
+		padding: 0;
+	}
+	.info p{
+		padding: 1rem 0.75rem 4rem 0.75rem;
+		font-size: 0.77rem;
+		line-height: 1.2;
+	}
+	.info .blue-bg{
+		text-align: center;
+		margin: 0;
+		padding:0.5rem 0;
+		width: 100%;
+	}
+	.logo2{
+		display: flex;
+		justify-content: center;
+	}
+	
+	
+}
